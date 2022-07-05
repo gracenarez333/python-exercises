@@ -26,3 +26,28 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 2}
+
+dd = {}
+# dd["smd"] = 1
+
+def letter_count():
+    for i in "alpha":
+        if i in dd:
+            dd[i]+=1
+        else:
+            dd[i]=1
+            
+
+letter_count()
+print(dd)
+
+def letter_count(str):
+    dd = {}
+    for char in str:
+        if char not in dd:
+            dd[char] = 1
+        else:
+            dd[char] += 1
+        return dd
+
+print(letter_count())

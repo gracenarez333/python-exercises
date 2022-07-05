@@ -13,3 +13,12 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+# p_times = ["u suck"]*17
+
+# print(p_times)
+
+def p_times(statement, num):
+    for p in range(1, num+1):
+        print(statement)
+p_times("u suck", 3)

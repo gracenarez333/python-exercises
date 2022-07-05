@@ -20,3 +20,10 @@ contacts = {
   'Lenny': '444-444-4444',
   'Daniel': '777-777-7777'
 }
+
+
+def print_contacts(dd):
+  for contact in dd:
+    print(contact, "has a phone number of", dd.get(contact))
+
+print_contacts(contacts)
